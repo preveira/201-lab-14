@@ -39,10 +39,7 @@ this.allProducts = productsArray.map(product => new Product(product.name, produc
     JSON.stringify(localStorage.getItem('allProducts'));
   }
 
-  this.instantiateProducts();
-
-}
-
+  //this.instantiateProducts();
 
 function Product(name, fileExtension = 'jpg') {
   this.name = name;
