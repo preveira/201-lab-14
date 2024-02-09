@@ -73,7 +73,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     function viewResults() {
         //unsure if code needed here. but buttons are removed when I edit to populate data on chart
-      console.log(appState.allProducts);
+      console.log('HERE ARE THE PRODUCTS IN STATE', appState.allProducts);
     }
   
 
