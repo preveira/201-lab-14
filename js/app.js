@@ -21,6 +21,7 @@ AppState.prototype.instantiateProducts = function () {
 AppState.prototype.saveToLocalStorage = function () {
   const productsJson = JSON.stringify(this.allProducts);
   localStorage.setItem('allProducts', productsJson);
+  console.log(productsJson)
 }
 
 AppState.prototype.loadItems = function () {
@@ -34,6 +35,9 @@ this.allProducts = productsArray.map(product => new Product(product.name, produc
 }
     
   // TODO: Update this instance method to retrieve data from local storage instead of creating new Products on each page load
+  function fetchData() {
+    JSON.stringify(localStorage.getItem('allProducts'));
+  }
 
   this.instantiateProducts();
 
