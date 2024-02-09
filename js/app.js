@@ -41,9 +41,9 @@ this.allProducts = productsArray.map(product => new Product(product.name, produc
 
   //this.instantiateProducts();
 
-function Product(name, fileExtension = 'jpg') {
+function Product(name, fileExtension = 'jpg', timesClicked = 0, timesShown = 0) {
   this.name = name;
   this.source = `assets/${name}.${fileExtension}`;
-  this.timesClicked = 0;
-  this.timesShown = 0;
+  this.timesClicked = timesClicked;
+  this.timesShown = timesShown;
 }
