@@ -30,9 +30,10 @@ const productsJson = localStorage.getItem('allProducts');
     const productsArray = JSON.parse(productsJson);
 this.allProducts = productsArray.map(product => new Product(product.name, product.source.split('.').pop()));
   } else {
-    this.instantiateProducts();
-  }
-}
+    
+    //this.instantiateProducts();
+  //}
+//}
     
   // TODO: Update this instance method to retrieve data from local storage instead of creating new Products on each page load
   function fetchData() {
